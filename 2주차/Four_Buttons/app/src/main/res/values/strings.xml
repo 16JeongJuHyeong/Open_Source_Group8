@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Four_Buttons</string>
+    <string name="string_button1">네이트 홈페이지 열기</string>
+    <string name="string_button2">911 응급전화 걸기</string>
+    <string name="string_button3">갤러리 열기</string>
+    <string name="string_button4">끝내기</string>
+<!--    @string는 string을 사용할 것임을 말하고,string_button1은 내가 원하는 string 변수의 이름이다.-->
+<!--    string_button1~4를 원하는 문자열로 정의한다.-->
+<!--    자주 쓰는 문자가 있다면,새롭게 정의해주는 것도 좋다-->
+</resources>

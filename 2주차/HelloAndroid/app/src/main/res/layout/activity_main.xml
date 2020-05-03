@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--Relative가 '상대적인'이란 뜻으로,다른 위젯의 상대적인 방향에 배치를 뜻함-->
+    <!--    위젯을 설정하지 않으면 기본적으로 parent를 기준으로 한다-->
+    <!--parent는 RelativeLayout를 의미하는데,이는 화면 정도로 생각하면 된다-->
+    <!--    앞으로 나올 Top,Bottom은 화면의 상단,하단으로 이해하면 된다-->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Hello World!"/>
+<!--    핵심인 문장이므로 centerInParent로 중심에 배치하게 함-->
+<!--    id는 위젯의 이름 정도로 생각할 수 있다.-->
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="208dp"
+        android:text="Switch" />
+<!--    centerHorizontal은 수평선의 중심에 둔다는 뜻-->
+<!--    marginTop는 위에서 공백이니, 화면 위로부터 얼마나 거리를 둘지 의미-->
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp" />
+<!--    따로 설정을 하지 않으면 기준을 parent의 상단(top)로 한다.-->
+<!--    아래에서부터 거리를 두고 싶다면 alignParentBottom으로 기준을 잡고,ParentBottom을 사용한다.-->
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="CheckBox" />
+<!--    굳이 상대적거리를 parent에서 둘 필요 없이, 다른 위젯으로부터 둘 수도 있다.-->
+<!--    CheckBox가 상단거리를 둘 대상을 textView로 두었다-->
+<!--    그 외 거리는 parent를 상대적 거리로 둘 때와 같다-->
+
+</RelativeLayout>
