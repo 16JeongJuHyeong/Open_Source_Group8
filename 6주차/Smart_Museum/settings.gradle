@@ -1,0 +1,2 @@
+rootProject.name='Smart_Museum'
+include ':app'
