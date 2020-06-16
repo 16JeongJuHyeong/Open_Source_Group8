@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--LinearLayout을 사용하면 위젯을 상단부터 하나씩 생성한다-->
+<!--Linear가 '(순차적)선형' 이란 뜻을 가지고 있기 때문이다-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+<!--orientation이 '방향'의 뜻을 가져,위젯을 놓는 방식을 선택할 수 있다.-->
+<!--    이번 과제에선 수직으로 놓는 것으로 한다.-->
+    <Button
+        android:id="@+id/naver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/nate_color"
+        android:text="@string/string_button1"></Button>
+<!--    Button의 아이디는 naver이고, 버튼의 색 또한 이름을 지어줬다.-->
+<!--이에 대한 내용은 colors.xml에 자세히 적혀 있다.-->
+<!--    text내용이 @string/string_button1이라고 되어있는데,이는 string.xml에 자세히 적혀 있다.-->
+
+    <Button
+        android:id="@+id/call_911"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/call_color"
+        android:text="@string/string_button2"></Button>
+
+    <Button
+        android:id="@+id/gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gallery_color"
+        android:text="@string/string_button3"></Button>
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/exit_color"
+        android:text="@string/string_button4"></Button>
+
+</LinearLayout>
